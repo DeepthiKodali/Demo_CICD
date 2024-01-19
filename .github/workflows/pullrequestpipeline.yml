@@ -17,7 +17,7 @@ jobs:
         uses: ServiceNow/sncicd-apply-changes@1.2.1
         env:
           snowUsername: ${{ secrets.NOW_USERNAME }}
-          snowPassword: ${{ secrets.NOW_PASSWORD }}
+          snowPassword: ${{ secrets.NOW_DEV_PASSWORD }}
           snowSourceInstance: ${{ secrets.NOW_DEV_INSTANCE }}
           appSysID: ${{ secrets.APP_SYS_ID }}
 
@@ -33,5 +33,5 @@ jobs:
           testSuiteName:
         env:
           snowUsername: ${{ secrets.NOW_USERNAME }}
-          snowPassword: ${{ secrets.NOW_PASSWORD }}
+          snowPassword: ${{ secrets.NOW_DEV_PASSWORD }}
           snowInstallInstance: ${{ secrets.NOW_DEV_INSTANCE }}
